@@ -58,5 +58,7 @@ class CheckoutActivity : AppCompatActivity() ,PaymentResultListener{
 
     override fun onPaymentError(p0: Int, p1: String?) {
         Toast.makeText(this, "Payment Error", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, ShoppingActivity::class.java)
+        startActivity(intent)
     }
 }
