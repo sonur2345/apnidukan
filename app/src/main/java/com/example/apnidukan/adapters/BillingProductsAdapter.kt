@@ -26,7 +26,7 @@ class BillingProductsAdapter : Adapter<BillingProductsAdapter.BillingProductsVie
 
                 val priceAfterPercentage =
                     billingProduct.product.offerPercentage.getProductPrice(billingProduct.product.price)
-                tvProductCartPrice.text = "$ ${String.format("%.2f", priceAfterPercentage)}"
+                tvProductCartPrice.text = "Rs. ${String.format("%.2f", priceAfterPercentage)}"
 
                 imageCartProductColor.setImageDrawable(
                     ColorDrawable(

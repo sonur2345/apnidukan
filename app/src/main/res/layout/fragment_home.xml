@@ -23,7 +23,7 @@
             android:layout_weight="1"
             android:background="@drawable/search_box_background">
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_thin"
@@ -34,9 +34,9 @@
                 android:text="Search Now"
                 android:textColor="#919394"
                 android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:layout_width="20dp"
